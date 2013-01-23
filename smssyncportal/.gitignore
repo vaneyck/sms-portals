@@ -1,5 +1,5 @@
-bin/
-.settings/org.eclipse.jdt.core.prefs
+bin/*
+*.swp
 ant.properties
 local.properties
 project.properties
