@@ -1,4 +1,4 @@
-package com.smssync.portal;
+package com.smssync.portal.two;
 
 import java.util.ArrayList;
 
@@ -31,7 +31,7 @@ public class SmsSyncPortal extends IntentService {
 	private void sendSMS(String sendTo, String msg) {
 		Context context = this.getBaseContext();
 
-		Toast.makeText(getApplicationContext(), "Portal 1 # SENDTO : "+sendTo+" MESSAGE: "+msg, Toast.LENGTH_LONG).show();;
+		Toast.makeText(getApplicationContext(), "Portal 2 # SENDTO : "+sendTo+" MESSAGE: "+msg, Toast.LENGTH_LONG).show();;
 		ArrayList<PendingIntent> sentIntents = new ArrayList<PendingIntent>();
 		ArrayList<PendingIntent> deliveryIntents = new ArrayList<PendingIntent>();
 
@@ -71,7 +71,7 @@ public class SmsSyncPortal extends IntentService {
 	 */
 	@Override
 	public IBinder onBind(Intent intent) {
-		Toast.makeText(getApplicationContext(), "Binding to Portal 1", Toast.LENGTH_SHORT)
+		Toast.makeText(getApplicationContext(), "Binding to Portal 2", Toast.LENGTH_SHORT)
 				.show();
 		return mMessenger.getBinder();
 	}

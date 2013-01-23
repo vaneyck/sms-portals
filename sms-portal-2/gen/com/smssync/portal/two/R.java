@@ -5,7 +5,7 @@
  * should not be modified by hand.
  */
 
-package com.smssync.portal;
+package com.smssync.portal.two;
 
 public final class R {
     public static final class attr {

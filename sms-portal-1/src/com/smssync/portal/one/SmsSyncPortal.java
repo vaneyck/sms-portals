@@ -1,4 +1,4 @@
-package com.smssync.portal;
+package com.smssync.portal.one;
 
 import java.util.ArrayList;
 
