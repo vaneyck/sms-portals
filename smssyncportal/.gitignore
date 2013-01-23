@@ -4,3 +4,4 @@ ant.properties
 local.properties
 project.properties
 proguard-project.txt
+*.class
