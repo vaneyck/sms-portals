@@ -1,7 +1,4 @@
 bin/*
-*.swp
-ant.properties
 local.properties
-project.properties
-proguard-project.txt
-*.class
+ant.properties
+
