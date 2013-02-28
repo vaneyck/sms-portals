@@ -1,4 +1,4 @@
-bin/*
+bin
+gen
 local.properties
 ant.properties
-
