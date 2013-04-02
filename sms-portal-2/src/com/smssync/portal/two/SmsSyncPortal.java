@@ -31,7 +31,7 @@ public class SmsSyncPortal extends IntentService {
 	private void sendSMS(String sendTo, String msg) {
 		Context context = this.getBaseContext();
 
-		Toast.makeText(getApplicationContext(), "Portal 2 # SENDTO : "+sendTo+" MESSAGE: "+msg, Toast.LENGTH_LONG).show();;
+		Toast.makeText(getApplicationContext(), "Portal 2 sending to "+sendTo, Toast.LENGTH_LONG).show();
 		ArrayList<PendingIntent> sentIntents = new ArrayList<PendingIntent>();
 		ArrayList<PendingIntent> deliveryIntents = new ArrayList<PendingIntent>();
 
