@@ -21,7 +21,7 @@ function buildApp {
 	ant debug
 }
 
-for verison in million two three
+for verison in one two three
 do
 	buildApp $version
 	cp bin/SmsSyncPortal-debug.apk ~/Desktop/SmsSyncPortal-$version-debug.apk
