@@ -15,6 +15,7 @@ function buildApp {
 for verison in one two three
 do
 	buildApp $version
+	ant debug
 	cp bin/SmsSyncPortal-debug.apk ~/Desktop/SmsSyncPortal-$version-debug.apk
 	git reset --hard && git clean -df
 done
