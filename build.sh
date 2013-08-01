@@ -1,7 +1,9 @@
 #!/bin/bash
 
+set -e
+
 function buildApp {
-	local version="$1"
+	local version=$1
 
 	echo "# $version # :Changing package name on AndroidManifest.xml"
 	sed -i -e s/million/$version/g AndroidManifest.xml
@@ -21,10 +23,10 @@ function buildApp {
 	ant debug
 }
 
-for verison in one
+for version in one two
 do
 	buildApp $version
 	cp bin/SmsSyncPortal-debug.apk ~/Desktop/SmsSyncPortal-$version-debug.apk
-	#git reset --hard && git clean -df
+	git reset --hard && git clean -df
 done
 
