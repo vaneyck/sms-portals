@@ -17,6 +17,7 @@ function buildApp {
 	rm -r src/com/smssync/portal/million
 
 	echo "# $version # Building the APP"
+	ant clean
 	ant debug
 }
 
